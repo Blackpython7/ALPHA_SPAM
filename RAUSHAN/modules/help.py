@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ 𝗔𝗟𝗣𝗛𝗔 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @ll_ALPHA_BABY_lll**"
+HELP_STRING = f"★ ZADE 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗨 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @YOURHUBBY_001**"
 
 HELP_BUTTON = [
     [
@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://telegra.ph/file/c53d9a7df9dbaa5f4db05.jpg",
+              "https://files.catbox.moe/zlriwi.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -136,8 +136,8 @@ async def helpback(event):
                 Button.inline("• ᴇxᴛʀᴀ •", data="extra")
               ],
               [
-                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/WORLD_ALPHA"),
-                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/+Q25anL0Ckuk5NzM1")
+                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/yourhubby_001"),
+                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/+eqE0gJDY7KE0ZTA1")
               ]
             ]
           )
@@ -180,7 +180,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @ll_ALPHA_BABY_lll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !! @YOURHUBBY_001", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +199,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Altron Bots !! @ll_ALPHA_BABY_lll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !! @YOURHUBBY_001", cache_time=0, alert=True)
