@@ -8,11 +8,11 @@ START_BUTTON = [
         Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/WORLD_ALPHA"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/+Q25anL0Ckuk5NzM1")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/elivationn"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/+rI_8VXa0gzplZmU1")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/TEAMPURVI/ALPHA_SPAM")
+        Button.url("• ʀᴇᴘᴏ •", "https://t.me/+eqE0gJDY7KE0ZTA1")
     ]
 ]
 
@@ -34,13 +34,13 @@ async def start(event):
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [ᴀʟᴘʜᴀ](https://t.me/ll_ALPHA_BABY_lll)**\n\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [ᴀᴠʏᴀɢʀᴀʜ](https://t.me/YOURHUBBY_001)**\n\n"
         TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://telegra.ph/file/e484dc030e63494789be5.jpg",
+                    "https://files.catbox.moe/zlriwi.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
-                )
+        )
